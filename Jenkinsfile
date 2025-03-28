@@ -31,8 +31,11 @@ pipeline {
             steps {
                 junit 'api-gateway/target/surefire-reports/*.xml'
             }
+        }
         stage('test'){
+            steps {
             sh echo "testing pipline code"
+        }
         }
     }
 }
